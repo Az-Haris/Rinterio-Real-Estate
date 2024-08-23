@@ -52,31 +52,7 @@
          <nav>
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h8m-8 6h16" />
-                      </svg>
-                    </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li><a class="hover:text-[#494949]">Home</a></li>
-                      <li><a class="hover:text-[#494949]">Services</a></li>
-                      <li><a class="hover:text-[#494949]">Portfolio</a></li>
-                      <li><a class="hover:text-[#494949]">Blogs</a></li>
-                      <li><a class="hover:text-[#494949]">Contact Us</a></li>
-                    </ul>
-                  </div>
+                  
                   <div class="flex items-center gap-1">
                     <div class="bg-color-primary w-7 h-7 flex justify-center items-center rounded-full">
                         <i class="fa-solid fa-arrow-up-long rotate-45"></i>
@@ -94,12 +70,52 @@
                   </ul>
                 </div>
                 <div class="navbar-end">
-                  <button class="flex items-center gap-2 px-3 py-2 rounded-full bg-color-primary">
-                    <h2 class="font-black">Book Consult</h2>
-                    <div class="bg-[#1C1C1C] w-7 h-7 flex justify-center items-center rounded-full">
-                        <i class="fa-solid text-white fa-arrow-up-long rotate-45"></i>
+                  
+                  <div class="hidden md:flex items-center gap-3">
+                    <div class="bg-white w-8 h-8 flex justify-center items-center rounded-full border shadow">
+                      <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
-                  </button>
+                    <div class="bg-white w-8 h-8 flex justify-center items-center rounded-full border shadow">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    
+                    <button class="flex items-center gap-2 px-3 py-2 rounded-full bg-color-primary">
+                      <h2 class="font-black">Book Consult</h2>
+                      <div class="bg-[#1C1C1C] w-7 h-7 flex justify-center items-center rounded-full">
+                          <i class="fa-solid text-white fa-arrow-up-long rotate-45"></i>
+                      </div>
+                    </button>
+                  </div>
+
+                  <!-- Hamburger -->
+                  <div class="dropdown lg:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <div class="bg-white w-8 h-8 flex justify-center items-center rounded-full border shadow">
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                      </div>
+                      
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-lg dropdown-content bg-base-100 rounded-box z-[1] mt-3 -ml-40 w-52 p-2 shadow">
+                      <li><a>Home</a></li>
+                      <li><a>Services</a></li>
+                      <li><a>Portfolio</a></li>
+                      <li><a>Blogs</a></li>
+                      <li><a>Contact Us</a></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
          </nav>
